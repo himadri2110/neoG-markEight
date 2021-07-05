@@ -1,0 +1,27 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+input {
+  width: 70%;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.output {
+  margin: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.fruitDiv {
+  margin: 1rem 0;
+}
+
+.fruitDiv span {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
