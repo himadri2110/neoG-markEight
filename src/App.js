@@ -38,7 +38,10 @@ export default function App() {
     <div className="App">
       <h1>Know your Fruit!</h1>
 
-      <input onChange={inputChangeHandler}></input>
+      <input
+        onChange={inputChangeHandler}
+        placeholder="Enter fruit emoji to know its name"
+      ></input>
 
       <div className="output">{input}</div>
 
