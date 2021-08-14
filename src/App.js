@@ -9,8 +9,12 @@ var fruitDictionary = {
   "🥝": "Kiwi",
   "🥭": "Mango",
   "🍌": "Banana",
+  "🍓": "Strawberry",
   "🍇": "Grapes",
-  "🍑": "Peach"
+  "🍏": "Green Apple",
+  "🍑": "Peach",
+  "🍒": "Cherry",
+  "🍈": "Melon"
 };
 
 var fruitKey = Object.keys(fruitDictionary);
