@@ -2,7 +2,7 @@ import "./styles.css";
 import { useState } from "react";
 
 var fruitDictionary = {
-  "": "";
+  "": "",
   "🍎": "Apple",
   "🍐": "Pear",
   "🍉": "Watermelon",
