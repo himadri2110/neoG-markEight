@@ -1,7 +1,7 @@
 import "./styles.css";
 import { useState } from "react";
 
-var fruitDictionary = {
+const fruitDictionary = {
   "": "",
   "🍎": "Apple",
   "🍐": "Pear",
@@ -18,26 +18,26 @@ var fruitDictionary = {
   "🍈": "Melon"
 };
 
-var fruitKey = Object.keys(fruitDictionary);
+const fruitKey = Object.keys(fruitDictionary);
 
 export default function App() {
-  var [input, setInput] = useState("");
-  var showOutput;
+  const [input, setInput] = useState("");
+  let showOutput;
 
-  function inputChangeHandler(event) {
-    input = event.target.value;
-    showOutput = fruitDictionary[input];
+  const inputChangeHandler = (event) => {
+    const inputEmoji = event.target.value;
+    showOutput = fruitDictionary[inputEmoji];
 
-    if (!(input in fruitDictionary)) {
+    if (!(inputEmoji in fruitDictionary)) {
       showOutput = "No such fruit found!";
     }
     setInput(showOutput);
-  }
+  };
 
-  function fruitClickHandler(fruit) {
+  const fruitClickHandler = (fruit) => {
     showOutput = fruitDictionary[fruit];
     setInput(showOutput);
-  }
+  };
 
   return (
     <div className="App">
